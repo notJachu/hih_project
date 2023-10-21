@@ -14,17 +14,19 @@
 header{
   position: relative;
   background-image: url(../resources/paralax.png);
-  min-height: 500px;
+  min-height: 400px;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  display: flex;
+  justify-content: end;
 }
 
 .title{
-  position: relative;
   background: none;
-  padding: 10%;
+  padding-top: 6%;
+  padding-right: 10%;
 }
 
 nav{
@@ -82,9 +84,12 @@ nav{
 }
 
 .content{
+  padding-top: 5%;
   height: 1500px;
   width: 100%;
   text-align: center;
+  display: flex;
+  justify-content: space-evenly;
 }
 
 .ft{
@@ -99,8 +104,91 @@ nav{
 
 .text{
   font-size: large;
+  text-align: justify;
+}
+
+.bigLetter::first-letter{
+  font-size: larger;
+  text-decoration: underline;
+}
+
+#left{
+  width: 80%; 
+}
+
+#par1{
+  scroll-margin-top: 50px;
+}
+
+#mobile{
+  display: none;
   text-align: center;
-  padding-left: 10%;
-  padding-right: 10%;
+  height: 256px;
+  background-image: url(../resources/photo1.png);
+  background-size: cover;
+}
+#mobile h1{
+  background: transparent;
+}
+
+#mob{
+  border: none;
+  background-color: #343333;
+  font-size: large;
+  border-radius: 5%;
+  padding: 4px;
+}
+
+#mob ul{
+  display: none;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #343333;
+  border-radius: 5%;
+}
+
+#mobileNav{
+  font-size: large;
+  background: none;
+  text-decoration: none;
+}
+
+#mob:hover  ul{
+  animation: none;
+  transition: none;
+  display: block; 
+}
+
+table, th, td{
+  border: none;
+  background-color: #343333;
+}
+tr:nth-child(even){
+  
+  background-color: #262626;
+}
+
+@media screen and (max-width: 900px){
+  #right{
+    display: none;
+  }
+  #left{
+    width: 100vw;
+    padding: 5px;
+  }
+  nav{
+    display: none;
+  }
+  header{
+    display: none;
+  }
+  #mobile{
+    display: block;
+  }
+  .text{
+    padding-bottom: 15%;
+  }
 }
 

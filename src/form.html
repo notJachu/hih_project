@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="form.css">
+</head>
+<body>
+    <div class="main">
+        <nav class="menu">
+            <ul id="bar">
+               <li><a href="index.html">Home Page</a></li>
+               <li><a href="gallery.html">Gallery</a></li>
+               <li><a href="#">Form</a></li>
+             </ul>
+       </nav>
+       <div class="content">
+            <form>
+                <h1>A short form about your experience with music</h1>
+                <h2 class="question">Do you like listening to music?</h2>
+                    <input type="radio" name="hasL" id="hasY" value="Yes">
+                    <label for="hasY">Yes</label><br>
+                    <input type="radio" name="hasL" id="hasN" value="No">
+                    <label for="hasN">No</label><br>
+                <h2 class="question">Select genres that you have listened to before:</h2>
+                    <input type="checkbox" id="Pop" name="Pop" value="Pop">
+                    <label for="Pop">Pop music</label><br>
+                    <input type="checkbox" id="Rap" name="Rap" value="Rap">
+                    <label for="Rap">Hip hop music</label><br>
+                    <input type="checkbox" id="Rock" name="Rock" value="Rock">
+                    <label for="Rock">Rock music</label><br>
+                    <input type="checkbox" id="Metal" name="Metal" value="Metal">
+                    <label for="Metal">Metal music</label><br>
+                    <input type="checkbox" id="Folk" name="Folk" value="Folk">
+                    <label for="Folk">Folk music</label><br>
+                    <label for="Other">If not on the list specify below</label><br>
+                    <input type="text" name="Other" id="Other" placeholder="An interesting genere">
+                <h2 class="question">Answer the following questions of a scale from 1 to 10:</h2>
+                    <label for="Range1">How often do you listen to music?</label><br>
+                    <input type="range" name="Range1" id="r1" min="1" max="10" step="1" list="values"><br>
+                    <label for="Range2">How fast do you like your music?</label><br>
+                    <input type="range" name="Range2" id="r2" min="1" max="10" step="1" list="values"><br>
+                    <datalist id="values">
+                        <option value="1" label="1"></option>
+                        <option value="2" label="2"></option>
+                        <option value="3" label="3"></option>
+                        <option value="4" label="4"></option>
+                        <option value="5" label="5"></option>
+                        <option value="6" label="6"></option>
+                        <option value="7" label="7"></option>
+                        <option value="8" label="8"></option>
+                        <option value="9" label="9"></option>
+                        <option value="10" label="10"></option>
+                      </datalist>
+                <h2 class="question">Select how often do you listen to music:</h2>
+                    <select name="hOft" id="hOft">
+                        <option value="1">1-2 times per week</option>
+                        <option value="2">3-4 times per week</option>
+                        <option value="3">5-6 times per week</option>
+                        <option value="4">Every day</option>
+                    </select><br>
+                <input type="reset" value="Clear form" class="finalButton">
+                <input type="submit" value="Submit form" class="finalButton">
+            </form>
+       </div>
+       <footer class="ft">
+            AUTHOR - JAN STĄSIEK
+        </footer>
+    </div>
+</body>
+</html>

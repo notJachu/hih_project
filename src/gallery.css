@@ -4,19 +4,20 @@
 }
 
 #title{
-  display: inherit;
+  justify-content: space-evenly;
+  display: flex;
+  align-items: center;
 }
 
 #logo{
-  width: 10%;
-  right: 0;
+  width: 100px;
 }
 
 
 .gallery{
     padding: 2%;
     width: 60%;
-    margin-left: 20%;
+    height: 80%;
     margin-top: 2%;
     border: 5px solid black;
     border-radius: 2%;
@@ -45,6 +46,8 @@
   padding-top: 2%;
 }
 
+
+
 @media screen and (max-width: 800px) {
     .column {
       flex: 50%;
@@ -64,5 +67,4 @@
     #logo {
       display: none;
     }
-  }
-
+}
