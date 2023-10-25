@@ -28,7 +28,6 @@ header{
   padding-top: 6%;
   padding-right: 10%;
 }
-
 nav{
   position: sticky;
   top: 0;
@@ -85,18 +84,19 @@ nav{
 
 .content{
   padding-top: 5%;
-  height: 1500px;
+  min-height: 1500px;
+  max-height: fit-content;
   width: 100%;
   text-align: center;
   display: flex;
   justify-content: space-evenly;
 }
 
-.ft{
-  background: #242424;
+footer{
+  background: #000000;
   height: 30px;
+  position: sticky;
   bottom: 0px;
-  position: fixed;
   padding: 3px;
   text-align: left;
   width: 100%;
@@ -116,7 +116,7 @@ nav{
   width: 80%; 
 }
 
-#par1{
+.sTop{
   scroll-margin-top: 50px;
 }
 
@@ -166,7 +166,6 @@ table, th, td{
   background-color: #343333;
 }
 tr:nth-child(even){
-  
   background-color: #262626;
 }
 

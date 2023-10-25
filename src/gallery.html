@@ -16,37 +16,87 @@
                <li><a href="form.html">Form</a></li>
              </ul>
        </nav>
+       
        <div class="content">
-            <div class="gallery">
+            <div id="gallery">
+                <svg style="display: none;">
+                    <defs>
+                        <filter id="noise">
+                            <feTurbulence
+                            baseFrequency="0.7,0.8"
+                            seed="0"
+                            type="fractalNoise"
+                            result="static"
+                            >
+                            <animate
+                                attributeName="seed"
+                                values="0;100"
+                                dur="800ms"
+                                repeatCount="1"
+                                begin="card.mouseenter"
+                            />
+                            </feTurbulence>
+                            <feDisplacementMap 
+                            in="SourceGraphic" 
+                            in2="static" 
+                            scale="0"
+                            >
+                            <animate
+                                attributeName="scale"
+                                values="0;50;0"
+                                dur="800ms"
+                                repeatCount="1"
+                                begin="card.mouseenter"
+                            />
+                            </feDisplacementMap>
+                        </filter>
+                    </defs>
+                </svg>
                 <div id="title">
                     <h1>A gallery of AI generated images</h1>
                     <a href="https://www.craiyon.com" target="_blank"><img id="logo" src="../resources/photo-ai.svg" alt="gallery logo"></a>
                 </div>
-                <div class="row">
-                    <div class="column">
+                <div id="display">
+                    <div class="card">
                         <img src="../resources/photo1.png" alt="image of a guitar">
+                    </div>
+                    <div class="card">
                         <img src="../resources/photo2.png" alt="image of a guitar">
+                    </div>
+                    <div class="card">
                         <img src="../resources/photo3.png" alt="image of a guitar">
                     </div>
-                    <div class="column">
+                    <div class="card">
                         <img src="../resources/photo4.png" alt="image of a guitar">
+                    </div>
+                    <div class="card">
                         <img src="../resources/photo5.png" alt="image of a guitar">
+                    </div>
+                    <div class="card">
                         <img src="../resources/photo6.png" alt="image of a guitar">
                     </div>
-                    <div class="column">
+                    <div class="card">
                         <img src="../resources/photo7.png" alt="image of a guitar">
+                    </div>
+                    <div class="card">
                         <img src="../resources/photo8.png" alt="image of a guitar">
+                    </div>
+                    <div class="card">
                         <img src="../resources/photo9.png" alt="image of a guitar">
                     </div>
-                    <div class="column">
+                    <div class="card">
                         <img src="../resources/photo10.png" alt="image of a guitar">
+                    </div>
+                    <div class="card">
                         <img src="../resources/photo11.png" alt="image of a guitar">
+                    </div>
+                    <div class="card">
                         <img src="../resources/photo12.png" alt="image of a guitar">
                     </div>
                 </div>
             </div>
        </div>
-       <footer class="ft">
+       <footer>
         AUTHOR - JAN STĄSIEK
     </footer>
     </div>
