@@ -113,7 +113,12 @@ footer{
 }
 
 #left{
-  width: 80%; 
+  width: 80vw; 
+}
+
+#right{
+  text-align: center;
+  width: auto;
 }
 
 .sTop{
@@ -135,7 +140,6 @@ footer{
   border: none;
   background-color: #343333;
   font-size: large;
-  border-radius: 5%;
   padding: 4px;
 }
 
@@ -146,7 +150,6 @@ footer{
   padding: 0;
   overflow: hidden;
   background-color: #343333;
-  border-radius: 5%;
 }
 
 #mobileNav{
@@ -161,12 +164,11 @@ footer{
   display: block; 
 }
 
-table, th, td{
+table, th{
   border: none;
-  background-color: #343333;
-}
-tr:nth-child(even){
-  background-color: #262626;
+  word-wrap: normal;
+  width: 15vw;
+  background-color: #000000;
 }
 
 @media screen and (max-width: 900px){

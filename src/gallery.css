@@ -16,7 +16,7 @@
   overflow: hidden;
 }
 
-.card > img{
+.card > a > img{
   height: 100%;
   width: 100%;
   object-fit: cover;
@@ -24,7 +24,7 @@
     
 }
 
-.card:hover > img {
+.card:hover > a > img {
   animation: pulse 800ms ease-in-out;
 }
 
@@ -42,10 +42,10 @@
 
 @keyframes pulse{
   from, to{
-    scale: 1;
+    transform: scale(1);
   }
 
   50%{
-    scale: 1.08;
+    transform: scale(1.08);
   }
 }
