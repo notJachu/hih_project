@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+  <articles>
+    <article number = "1" theme = "tba">
+        <headline>
+            titi
+        </headline>
+        <author>
+            some1
+        </author>
+        <paragraph>
+
+        </paragraph>
+    </article>
+    <article number = "2" theme = "tba">
+        <headline>
+            titi
+        </headline>
+        <author usedAI = "true">
+            <name>me</name>
+            <surrname>mre</surrname>
+            <index></index>
+            <contact>
+                <phone dir = "+48">
+                    8932173891298
+                </phone>
+                <email>
+                    smth@mail.net
+                </email>
+            </contact>
+        </author>
+        <paragraph>
+            
+        </paragraph>
+    </article>
+    <article number = "3" theme = "tba">
+        <headline>
+            titi
+        </headline>
+        <author>
+            some1
+        </author>
+        <paragraph>
+            
+        </paragraph>
+    </article>
+  </articles>
+
+  <funFacts>
+    <table tableTitle = "">
+        
+    </table>
+  </funFacts>
+
+  <gallery type = "images">
+
+  </gallery>
+
+  <sources count = "3">
+    <url dest = "market-report">https://www.grandviewresearch.com/industry-analysis/guitar-market-report</url>
+    <url dest = "ChatGPT">https://chat.openai.com</url>
+    <url dest = "DallE">https://www.craiyon.com</url>
+  </sources>
+</root>
