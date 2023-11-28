@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!ELEMENT root-element (author, articles, guitarists, guitar-brands, sources)>
+
+<!ELEMENT person (name, surrname, birth?, death?)>
+
+<!ELEMENT name (#PCDATA)>
+<!ELEMENT surrname (#PCDATA)>
+<!ELEMENT birth (#PCDATA)>
+<!ELEMENT death (#PCDATA)>
+
+<!ELEMENT author (person, index, email)>
+
+<!ELEMENT index (#PCDATA)>
+<!ELEMENT email (#PCDATA)>
+
+<!ELEMENT articles (article+)>
+
+<!ELEMENT article (headline, text)>
+<!ATTLIST article id CDATA #REQUIRED>      
+
+<!ELEMENT headline (#PCDATA)>
+<!ELEMENT text (#PCDATA)>
+<!ATTLIST text paragraphs CDATA #REQUIRED>
+
+<!ELEMENT guitarists (guitarist+)>
+
+<!ELEMENT guitarist (person, description, image*, bands)>
+<!ATTLIST guitarist inBand (Yes|No) "Yes">
+
+<!ELEMENT description (#PCDATA)>
+
+<!ELEMENT image (#PCDATA)>
+<!ATTLIST image location CDATA #REQUIRED>
+
+<!ELEMENT bands (band+)>
+<!ELEMENT band (band-name, join-date)>
+<!ELEMENT band-name (#PCDATA)>
+<!ELEMENT join-date (#PCDATA)>
+
+<!ELEMENT guitar-brands (brand*)>
+
+<!ELEMENT brand (founder, country, description, models)>
+<!ATTLIST brand brand-name CDATA #REQUIRED>
+
+<!ELEMENT founder (person)>
+<!ELEMENT country (#PCDATA)>
+<!ELEMENT models (#PCDATA)>
+
+<!ELEMENT sources ((url|description)*)>
+
+<!ELEMENT url (#PCDATA)>
+<!ATTLIST url src CDATA #REQUIRED>

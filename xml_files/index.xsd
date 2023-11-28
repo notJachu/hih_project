@@ -82,7 +82,7 @@
     </xs:attribute>
 
     <xs:complexType name="guitarists-type">
-        <xs:sequence>
+        <xs:sequence maxOccurs="unbounded">
             <xs:element name="guitarist" type="guitarist-type"></xs:element>
         </xs:sequence>
     </xs:complexType>
@@ -147,6 +147,11 @@
                             </xs:simpleType>
                         </xs:element>
                         <xs:element ref="description"></xs:element>
+                        <xs:element name="models">
+                            <xs:simpleType>
+                                <xs:list itemType="xs:string"></xs:list>
+                            </xs:simpleType>
+                        </xs:element>
                     </xs:sequence>
                     <xs:attribute name="brand-name" type="short-str" use="required"></xs:attribute>
                 </xs:complexType>
@@ -199,4 +204,4 @@
 
 
 <!-- 6 attr at least 1 global used twice 5/6-->
-<!-- use list and limit it-->
+<!-- use list and limit it kinda done-->
