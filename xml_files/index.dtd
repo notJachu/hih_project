@@ -49,4 +49,3 @@
 <!ELEMENT sources ((url|description)*)>
 
 <!ELEMENT url (#PCDATA)>
-<!ATTLIST url src CDATA #REQUIRED>
