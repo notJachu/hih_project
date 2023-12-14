@@ -200,8 +200,3 @@
         </xs:choice>
     </xs:complexType>
 </xs:schema>
-
-
-
-<!-- 6 attr at least 1 global used twice 5/6-->
-<!-- use list and limit it kinda done-->

@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!ELEMENT root-element (author, articles, guitarists, guitar-brands, sources)>
 
-<!ELEMENT person (name, surrname, birth?, death?)>
+<!ENTITY % person "name, surrname, birth?, death?">
 
 <!ELEMENT name (#PCDATA)>
 <!ELEMENT surrname (#PCDATA)>
 <!ELEMENT birth (#PCDATA)>
 <!ELEMENT death (#PCDATA)>
 
-<!ELEMENT author (person, index, email)>
+<!ELEMENT author (%person;, index, email)>
 
 <!ELEMENT index (#PCDATA)>
 <!ELEMENT email (#PCDATA)>
@@ -24,7 +24,7 @@
 
 <!ELEMENT guitarists (guitarist+)>
 
-<!ELEMENT guitarist (person, description, image*, bands)>
+<!ELEMENT guitarist (%person;, description, image*, bands)>
 <!ATTLIST guitarist inBand (Yes|No) "Yes">
 
 <!ELEMENT description (#PCDATA)>
@@ -42,11 +42,10 @@
 <!ELEMENT brand (founder, country, description, models)>
 <!ATTLIST brand brand-name CDATA #REQUIRED>
 
-<!ELEMENT founder (person)>
+<!ELEMENT founder (%person;)>
 <!ELEMENT country (#PCDATA)>
 <!ELEMENT models (#PCDATA)>
 
 <!ELEMENT sources ((url|description)*)>
 
 <!ELEMENT url (#PCDATA)>
-<!ATTLIST url src CDATA #REQUIRED>
